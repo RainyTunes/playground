@@ -11,8 +11,30 @@ class RNHighScores extends React.Component {
     ));
     return (
       <View style={styles.container}>
-        <Text style={styles.highScoresTitle}>2048 High Scores!</Text>
-        <Text style={styles.scores}>{contents}</Text>
+        <Text style={{
+                        mariginTop: 10, 
+                        left: 20,
+                        // borderColor: '#000000', 
+                        // borderStyle: 'solid',
+                        // borderColor: 'rgb(33,77,222)',
+                        // backgroundColor: 'rgb(228,61,36)',
+                        // borderRadius: 16, 
+                        
+                        fontSize: 20,
+                        width: 300,
+
+                        lineHeight: 25, 
+                        height: 200,
+
+                        top: 28,
+                        right: 15,
+                        textAlign: 'center',
+                        overflow: 'hidden',
+                        
+                    }}
+                    numberOfLines={0}
+                    ellipsizeMode='tail'
+                    >腾讯科技股份有限公司腾讯科技股份有限公司腾讯科技股份有限公司腾讯科技股份有限公司腾讯科技股份有限公司腾讯科技股份有限公司腾讯科技股份有限公司腾讯科技股份有限公司腾讯科技股份有限公司</Text>
       </View>
     );
   }

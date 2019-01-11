@@ -45,7 +45,6 @@
     
     
     self.view = rootView;
-    
 }
 
 /*

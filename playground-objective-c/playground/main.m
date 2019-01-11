@@ -41,7 +41,23 @@ int main(int argc, const char * argv[]) {
 //      NSLog(@"%@", [foo substringFromIndex:6]);
 //      NSLog(@"%ld", NSMaxRange([foo rangeOfString:@"34567"]));
       
-      NSData *decodeData = [[NSData alloc] initWithBase64EncodedString:base64ImageDataString options:(NSDataBase64DecodingIgnoreUnknownCharacters)];
+//      NSData *decodeData = [[NSData alloc] initWithBase64EncodedString:base64ImageDataString options:(NSDataBase64DecodingIgnoreUnknownCharacters)];
+        
+//        NSNumber *n1 = @1;
+//        NSNumber *n2 = @2;
+//        NSNumber *n3 = @3;
+//        NSMutableArray *arr = [@[n1, n2, n3] mutableCopy];
+//        arr[1] = nil;
+//        for (NSNumber *num in arr) {
+//            NSLog(@"%@", num);
+//        }
+        
+        NSString *str = @"😂";
+        NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+        NSLog(@"%@", str);
+        NSLog(@"%@", data);
+        
+        
       
     }
   

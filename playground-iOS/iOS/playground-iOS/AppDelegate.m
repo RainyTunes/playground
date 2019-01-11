@@ -12,6 +12,7 @@
 #import "ViewController.h"
 #import "RNTesterViewController.h"
 #import "WeexTesterViewController.h"
+#import "TestViewController.h"
 
 #import <WeexSDK/WeexSDK.h>
 
@@ -49,21 +50,25 @@
     
     MainViewController *mvc = [[MainViewController alloc] init];
     
-    ViewController *viewController = [[ViewController alloc] init];
-    viewController.title = @"Call Js";
-    viewController.view.backgroundColor = UIColor.whiteColor;
-    [mvc addChildViewController: viewController];
+//    ViewController *viewController = [[ViewController alloc] init];
+//    viewController.title = @"Call Js";
+//    viewController.view.backgroundColor = UIColor.whiteColor;
+//    [mvc addChildViewController: viewController];
     
-    RNTesterViewController *rnTesterViewController = [[RNTesterViewController alloc] init];
-    rnTesterViewController.title = @"RNTester";
-    rnTesterViewController.view.backgroundColor = UIColor.whiteColor;
-    [mvc addChildViewController: rnTesterViewController];
+//    RNTesterViewController *rnTesterViewController = [[RNTesterViewController alloc] init];
+//    rnTesterViewController.title = @"RNTester";
+//    rnTesterViewController.view.backgroundColor = UIColor.whiteColor;
+//    [mvc addChildViewController: rnTesterViewController];
     
-    WeexTesterViewController *weexTesterViewController = [[WeexTesterViewController alloc] init];
-    weexTesterViewController.title = @"WeexTester";
-    weexTesterViewController.view.backgroundColor = UIColor.whiteColor;
-    [mvc addChildViewController: weexTesterViewController];
+//    WeexTesterViewController *weexTesterViewController = [[WeexTesterViewController alloc] init];
+//    weexTesterViewController.title = @"WeexTester";
+//    weexTesterViewController.view.backgroundColor = UIColor.whiteColor;
+//    [mvc addChildViewController: weexTesterViewController];
     
+    TestViewController *testViewController = [[TestViewController alloc] init];
+    testViewController.title = @"TestViewController";
+    testViewController.view.backgroundColor = UIColor.whiteColor;
+    [mvc addChildViewController: testViewController];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = mvc;

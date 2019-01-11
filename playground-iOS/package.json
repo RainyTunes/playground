@@ -8,6 +8,7 @@
   "dependencies": {
     "react": "16.5.0",
     "react-native": "^0.57.1",
-    "react-native-cli": "^2.0.1"
+    "react-native-cli": "^2.0.1",
+    "scheduler": "^0.11.2"
   }
 }
